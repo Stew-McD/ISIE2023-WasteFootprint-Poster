@@ -174,7 +174,7 @@
 
 %% QR code
 \newcommand{\qrcode}[3]{
-\begin{minipage}[c]{0.30\textwidth}
+\begin{minipage}[c]{0.2\textwidth}
 \includegraphics[width=\textwidth]{#1}
 \end{minipage}%
 \begin{minipage}[c]{0.12\textwidth}

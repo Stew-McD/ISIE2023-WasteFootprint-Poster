@@ -12,9 +12,9 @@
 
 %% Setting the width of columns
 % Left column
-%\setlength{\leftbarwidth}{0.25\paperwidth}
+\setlength{\leftbarwidth}{0.25\paperwidth}
 % Right column
-%\setlength{\rightbarwidth}{0.25\paperwidth}
+\setlength{\rightbarwidth}{0.235\paperwidth}
 
 %% Setting the column margins
 % Horizontal margin
@@ -22,7 +22,7 @@
 % Vertical margin
 %\setlength{\columnmarginhorizontal}{0.05\paperheight}
 % Horizontal margin for the main column
-%\setlength{\maincolumnmarginvertical}{0.15\paperheight}
+\setlength{\maincolumnmarginvertical}{0.05\paperheight}
 % Vertical margin for the main column
 %\setlength{\maincolumnmarginhorizontal}{0.15\paperheight}
 
@@ -34,7 +34,7 @@
 % Title font
 %\renewcommand{\fontsizetitle}{\fontsize{28}{35} \selectfont}
 % Author font
-%\renewcommand{\fontsizeauthor}{\fontsize{28}{35} \selectfont}
+\renewcommand{\fontsizeauthor}{\fontsize{35}{20} \selectfont}
 % Section font
 %\renewcommand{\fontsizesection}{\fontsize{28}{35} \selectfont}
 
@@ -62,38 +62,34 @@
 \maincolumn{
 %%%% Main space
 
-\textbf{Main finding} goes here,
+\textbf{Where} did all this waste come from?
 \\translated into \textbf{plain English}.
 \\\textbf{Emphasize} the important words.
 }{
 %%%% Bottom space
-
-%% QR code
-\qrcode{img/qrcode}{img/smartphoneWhite}{
-\textbf{Take a picture} to
-\\download the full paper
-}
-% Smartphone icon
-% Author: Freepik
-% Retrieved from: https://www.flaticon.com/free-icon/smartphone_65680
-
-%% Compact QR code (comment the previous command and uncomment this one to switch)
-%\compactqrcode{img/qrcode}{
-%\textbf{Take a picture} to
-%\\download the full paper
-%}
-
+%% This fills the space between the content and the logo
+\vfill
+%% Institution logo
+\begin{flushright}
+\includegraphics[height=0.1\textwidth]{img/logoUL_white}
+\hspace{30pt}
+\includegraphics[height=0.1\textwidth]{img/brightway}
+\vspace{10pt}
+\end{flushright}
 }
 
 }{
 %%%%%%%% LEFT COLUMN
 
-\title{The Title}
-\author{Mike Morrison}
-\author{Rafael Bailo}
-\institution{Optional Institution Under Name}
+\title{WasteFootprint}
+{\fontsizesection\selectfont\textbf{a flexible python tool for analysing\\ supply-chain waste flows in LCA}}\\
 
-\section{Introduction}
+\vspace{10pt}
+\author{Elizabeth Lanphere, Stewart Charles McDowall, Stefano Cucurachi, Carlos Filipe Blanco Rocha}
+\vspace{30pt}
+\institution{CML, Leiden University, The Netherlands}
+
+\section{What?}
 Here is an itemised list:
 \begin{itemize}
 \item The first item.
@@ -101,47 +97,28 @@ Here is an itemised list:
 \item The third item.
 \end{itemize}
 
-\section{A Diagram}
+\section{Why?}
 Here is a diagram:
-\begin{center}
-% Linear regression
-% Author: Henri Menke
-% Retrieved from: http://www.texample.net/tikz/examples/linear-regression/
-\includegraphics[width=\textwidth]{img/tikzexample1}
-\end{center}
+% \begin{center}
 
-\section{Fundamental Theorem\\of Calculus}
-If $f$ is continuous on the closed interval $[a,b]$ and $F$ is the indefinite integral of $f$ on $[a,b]$, then
-\begin{equation}
-\int_a^b f(x)\,\mathrm{d}x = F(b)-F(a).
-\end{equation}
+% \end{center}
 
-\section{Conclusion}
+\section{How?}
+
+
+\section{What next?}
 This is a great poster format!
 
-%% This fills the space between the content and the logo
 \vfill
-
-%% Institution logo
-\includegraphics[width=\textwidth]{img/logo}\\
+\begin{center}
+\includegraphics[width=0.4\textwidth]{img/qr_code}\\
+{\fontsizesection\selectfont\textbf{Github repo}}
+\end{center}
 
 }{
 %%%%%%%% RIGHT COLUMN
+{\fontsizesection\selectfont\textbf{Step by step through the code}}\\
 
-Here you can add \textbf{supplementary material}. For instance, a new diagram:
-\begin{center}
-% Commutative diagram with edges passing under/over
-% Author: Stefan Kottwitz, http://texblog.net/
-% Retrieved from: http://www.texample.net/tikz/examples/commutative-diagram/
-\includegraphics[width=\textwidth]{img/tikzexample2}
-\end{center}
-
-Some cute ducklings:
-\begin{center}
-% Picture of ducklings
-% Author: Magda Ehlers, https://www.pexels.com/@magda-ehlers-pexels
-% Retrieved from: https://www.pexels.com/photo/selective-focus-photo-of-flock-of-ducklings-perching-on-gray-concrete-pavement-1300355/
-\includegraphics[width=\textwidth]{img/ducklings}
-\end{center}
+\includegraphics[width=\textwidth]{img/Flowchart_WasteFootprint}
 }
 \end{document}
