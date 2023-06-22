@@ -32,7 +32,7 @@
 % Main column font
 %\renewcommand{\fontsizemain}{\fontsize{28}{35} \selectfont}
 % Title font
-%\renewcommand{\fontsizetitle}{\fontsize{28}{35} \selectfont}
+\renewcommand{\fontsizetitle}{\fontsize{105}{35} \selectfont}
 % Author font
 \renewcommand{\fontsizeauthor}{\fontsize{35}{20} \selectfont}
 % Section font
@@ -62,7 +62,7 @@
 \maincolumn{
 %%%% Main space
 
-\textbf{Where} did all this waste come from?
+\textbf{WHAT DO YOU WANT FOR DINNER?} 
 \\translated into \textbf{plain English}.
 \\\textbf{Emphasize} the important words.
 }{
@@ -71,10 +71,9 @@
 \vfill
 %% Institution logo
 \begin{flushright}
-\includegraphics[height=0.1\textwidth]{img/logoUL_white}
-\hspace{30pt}
-\includegraphics[height=0.1\textwidth]{img/brightway}
-\vspace{10pt}
+\includegraphics[height=0.1\textwidth]{img/logoUL_white}\hfill
+\includegraphics[height=0.07\textwidth]{img/python}\hfill
+\includegraphics[height=0.07\textwidth]{img/brightway}\hfill
 \end{flushright}
 }
 
@@ -82,32 +81,52 @@
 %%%%%%%% LEFT COLUMN
 
 \title{WasteFootprint}
-{\fontsizesection\selectfont\textbf{a flexible python tool for analysing\\ supply-chain waste flows in LCA}}\\
+{\fontsizesection\selectfont\textbf{a flexible tool for analysing\\ supply-chain waste flows in LCA}}\\
 
 \vspace{10pt}
-\author{Elizabeth Lanphere, Stewart Charles McDowall, Stefano Cucurachi, Carlos Filipe Blanco Rocha}
+\author{Elizabeth Lanphere, Stewart Charles McDowall, Stefano Cucurachi \& Carlos Filipe Blanco Rocha}
 \vspace{30pt}
 \institution{CML, Leiden University, The Netherlands}
 
-\section{What?}
-Here is an itemised list:
-\begin{itemize}
-\item The first item.
-\item The second item.
-\item The third item.
-\end{itemize}
 
 \section{Why?}
-Here is a diagram:
-% \begin{center}
+\begin{itemize}
+    \item An extension to the brightway2 LCA framework
+    \item Calculates waste footprint of a product or service
+    \item Can also do the same for any other flows! \\(e.g., gas, water, critical materials)
+    \end{itemize}
+\section{What?}
 
-% \end{center}
+\begin{itemize}
+\item An extension to the brightway2 LCA framework
+\item Calculates waste footprint of a product or service
+\item Finds upstream waste flows in a supply chain
+\item Categorises waste flows into 14 types
+\item Finds hotspots in waste generation
+\item Can also do the same for any other flows! \\(e.g., gas, water, critical materials)
+\end{itemize}
 
 \section{How?}
+\begin{itemize}
+    \item Explodes database, identifies upstream waste
+    \item Exchanges edited and custom methods written
+    \item Waste flows become pseudo-biosphere flows
+    \item Waste footprint calculated as an LCIA method
+\end{itemize}
 
+\section{What are the challenges?}
+\begin{itemize}
+    \item Data completeness: 95\% of waste has no EoL
+    \item Waste is not all the same: Sometimes 'inert-waste' is just moving some rocks around
+\end{itemize}
 
 \section{What next?}
-This is a great poster format!
+\begin{itemize}
+    \item "Data completeness:"
+    \item Waste is not all the same
+    \item "Extension with case studies
+    \item Waste footprint calculated as an LCIA method
+\end{itemize}
 
 \vfill
 \begin{center}
