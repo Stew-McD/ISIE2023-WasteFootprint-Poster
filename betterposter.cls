@@ -198,10 +198,10 @@
 %% Section command
 \renewcommand{\section}[1]{
 
-\vspace{2em}{\fontsizesection\selectfont
+\vspace{1em}{\fontsizesection\selectfont
 \textbf{\leavevmode
 #1
-}}\\[0.5em]
+}}\\[-0.9em]
 }
 
 %% Title command
@@ -214,7 +214,7 @@
 
 %% Author command
 \renewcommand{\author}[1]{
-{\color{gray}\fontsizeauthor
+{\color{darkgray}\fontsizeauthor
 #1
 }\\[-1.0em]
 
