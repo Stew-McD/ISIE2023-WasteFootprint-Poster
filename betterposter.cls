@@ -111,8 +111,6 @@
 \setlength{\maincolumnmarginvertical}{0.07\paperheight}
 \setlength{\maincolumnmarginhorizontal}{0.03\paperheight}
 
-
-
 %%%% TEMPLATE COMMANDS
 
 %% Main beterposter command
@@ -160,8 +158,6 @@
 %% Main column command
 \newcommand{\maincolumn}[2]{
 \vfill{
-\fontsizemain
-\setmar
 
 #1
 
@@ -171,29 +167,6 @@
 \begin{minipage}[t][0.25\textheight][b]{\textwidth}
 #2
 \end{minipage}
-}
-
-%% QR code
-\newcommand{\qrcode}[3]{
-\begin{minipage}[c]{0.2\textwidth}
-\includegraphics[width=\textwidth]{#1}
-\end{minipage}%
-\begin{minipage}[c]{0.12\textwidth}
-\hfill
-\includegraphics[height=0.85\textwidth]{#2}
-\end{minipage}%
-\begin{minipage}[c]{0.50\textwidth}
-#3
-\end{minipage}%
-}
-
-%% Compact QR code
-\newcommand{\compactqrcode}[2]{
-\begin{minipage}[t]{0.3\textwidth}
-\includegraphics[width=\textwidth]{#1}
-
-#2
-\end{minipage}%
 }
 
 %% Section command
