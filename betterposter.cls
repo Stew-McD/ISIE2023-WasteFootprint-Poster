@@ -104,12 +104,12 @@
 \ProcessOptions\relax
 
 %% Default values for lengths
-\setlength{\leftbarwidth}{0.2\paperwidth}
+\setlength{\leftbarwidth}{0.25\paperwidth}
 \setlength{\rightbarwidth}{0.2\paperwidth}
 \setlength{\columnmarginvertical}{0.025\paperheight}
 \setlength{\columnmarginhorizontal}{0.025\paperheight}
 \setlength{\maincolumnmarginvertical}{0.07\paperheight}
-\setlength{\maincolumnmarginhorizontal}{0.07\paperheight}
+\setlength{\maincolumnmarginhorizontal}{0.03\paperheight}
 
 
 
@@ -161,6 +161,7 @@
 \newcommand{\maincolumn}[2]{
 \vfill{
 \fontsizemain
+\setmar
 
 #1
 
