@@ -40,10 +40,10 @@
 %% Colours
 \RequirePackage{xcolor}
 \definecolor{imperialblue}{RGB}{0,62,116}
-\definecolor{empirical}{RGB}{0,77,64}
-\definecolor{theory}{RGB}{26,35,126}
-\definecolor{methods}{RGB}{140,22,22}
-\definecolor{intervention}{RGB}{255,213,79}
+\definecolor{empirical}{RGB}{145, 182, 249}
+\definecolor{theory}{RGB}{174, 214, 255}
+\definecolor{methods}{RGB}{145, 182, 249}
+\definecolor{intervention}{RGB}{145, 182, 249}
 
 \newcommand{\columnbackgroundcolor}{white}
 \newcommand{\columnfontcolor}{black}
