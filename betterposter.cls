@@ -39,15 +39,17 @@
 
 %% Colours
 \RequirePackage{xcolor}
-\definecolor{imperialblue}{RGB}{0,62,116}
-\definecolor{empirical}{RGB}{145, 182, 249}
+\definecolor{purple}{RGB}{67,45,87}
+\usepackage{xcolor}
+\definecolor{lightpurple}{RGB}{206, 203, 203}
+\colorlet{lightpurpleopacity}{lightpurple!20}
 \definecolor{theory}{RGB}{174, 214, 255}
 \definecolor{methods}{RGB}{145, 182, 249}
 \definecolor{intervention}{RGB}{145, 182, 249}
 
 \newcommand{\columnbackgroundcolor}{white}
 \newcommand{\columnfontcolor}{black}
-\newcommand{\maincolumnbackgroundcolor}{imperialblue}
+\newcommand{\maincolumnbackgroundcolor}{purple}
 \newcommand{\maincolumnfontcolor}{white}
 
 %% Graphics
@@ -72,10 +74,10 @@
 
 %%%% SIZING OPTIONS
 
-\newcommand{\fontsizestandard}{\fontsize{32.00}{50.50} \selectfont}
+\newcommand{\fontsizestandard}{\fontsize{35.0}{50.50} \selectfont}
 \newcommand{\fontsizemain}{\fontsize{116.00}{220.00} \selectfont}
 \newcommand{\fontsizetitle}{\fontsize{80.00}{120.00} \selectfont}
-\newcommand{\fontsizeauthor}{\fontsize{48.00}{68.00} \selectfont}
+\newcommand{\fontsizeauthor}{\fontsize{48.00}{48.00} \selectfont}
 \newcommand{\fontsizesection}{\fontsize{48.00}{68.00} \selectfont}
 
 \DeclareOption{a2paper}{
@@ -128,6 +130,13 @@
 {\columnbackgroundcolor}{\columnfontcolor}{\columnmarginvertical}{\columnmarginhorizontal}{#3}%
 }
 
+
+\newcommand{\glowbox}[1]{
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[draw=none, rounded corners=5pt, line width=3pt, blur shadow={shadow blur steps=5}] (box) {#1};
+    \end{tikzpicture}
+}
+
 %% Coloured column command
 \newcommand{\column}[7]{%
 \begin{minipage}[t][#1][t]{#2}%
@@ -172,7 +181,7 @@
 %% Section command
 \renewcommand{\section}[1]{
 
-\vspace{1em}{\fontsizesection\selectfont
+\vspace{1.6em}{\fontsizesection\selectfont
 \textbf{\leavevmode
 #1
 }}\\[-0.9em]
