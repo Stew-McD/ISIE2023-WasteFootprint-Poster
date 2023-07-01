@@ -44,7 +44,7 @@
 
 %% Changing colours
 % Background of side columns
-% \renewcommand{\columnbackgroundcolor}{lightpurple}
+\renewcommand{\columnbackgroundcolor}{lightpurple}
 % Font of side columns
 %\renewcommand{\columnfontcolor}{gray}
 % Background of main column
@@ -54,17 +54,14 @@
 % \renewcommand{\maincolumnbackgroundcolor}{intervention}
 % Font of main column
 %\renewcommand{\maincolumnfontcolor}{gray}
-\usepackage{tikz}
+
 \usepackage{setspace}
-\usetikzlibrary{shadows.blur}
 
 \begin{document}
     \betterposter{
     %%%%%%%% MAIN COLUMN
     \maincolumn{
     %%%% Main space
-\glowbox{
-
         \vspace{100pt}
 
         \begin{spacing}{3.5}
@@ -109,7 +106,7 @@
         \includegraphics[height=0.1\textwidth]{img/logoUL_white}\hfill
         \includegraphics[height=0.07\textwidth]{img/python}\hfill
         \includegraphics[height=0.07\textwidth]{img/brightway}
-}
+
     }{
         %%%% Bottom space
         %% This fills the space between the content and the logo
@@ -151,13 +148,14 @@ It explodes the database, identifies upstream waste exchanges, edits them and wr
     %%%%%%%% RIGHT COLUMN
     \begin{center}
     {\fontsizesection\selectfont \textbf{         Step by step through the code}}\\
-    \vspace{50pt}    
+    \vspace{30pt}    
     \includegraphics[width=1\textwidth]{img/Flowchart_WasteFootprint.pdf}\\
-    \vspace{20pt}
-    {\fontsize{36}{40}\selectfont View the WasteFootprint code\\ in our GitHub repository\\}
     \vspace{30pt}
-    \includegraphics[width=0.3\textwidth]{img/qr.svg.eps}
+    {\fontsize{36}{40}\selectfont View the WasteFootprint code\\ in our GitHub repository\\}
+    \vspace{10pt}
+    \includegraphics[width=0.3\textwidth]{img/qr-code.pdf}
     \end{center}
 }
 
 \end{document}
+

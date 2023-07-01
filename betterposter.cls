@@ -41,8 +41,7 @@
 \RequirePackage{xcolor}
 \definecolor{purple}{RGB}{67,45,87}
 \usepackage{xcolor}
-\definecolor{lightpurple}{RGB}{206, 203, 203}
-\colorlet{lightpurpleopacity}{lightpurple!20}
+\definecolor{lightpurple}{RGB}{227, 219, 235}
 \definecolor{theory}{RGB}{174, 214, 255}
 \definecolor{methods}{RGB}{145, 182, 249}
 \definecolor{intervention}{RGB}{145, 182, 249}
