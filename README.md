@@ -13,8 +13,9 @@ This design is based on the 'better poster' template by Mike Morrison, see [here
 The poster is available in the original LaTeX, as well as the following formats:
 
 [PDF](WasteFootprintPoster_ISIE.pdf)  
-[PNG](WasteFootprintPoster_ISIE.png)  
+[PNG](WasteFootprintPoster_ISIE.png)
+[SVG](WasteFootprintPoster_ISIE.svg) 
 
 ----
 
-![image](WasteFootprintPoster_ISIE.png)  
+![image](WasteFootprintPoster_ISIE.pdf)  
