@@ -198,7 +198,7 @@
 \renewcommand{\author}[1]{
 {\color{darkgray}\fontsizeauthor
 #1
-}\\[-1.0em]
+}\\[-1.5em]
 
 }
 
