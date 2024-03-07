@@ -1,4 +1,4 @@
-# WasteFootprint poster for ISIE 2023
+# WasteFootprint poster for the ISIE 2023 conference
 
 This repository contains the poster for the WasteFootprint tool presented at ISIE2023 in Leiden, Netherlands.  
 
